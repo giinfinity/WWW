@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <title>AH-Nettmann</title>
 </head>
 <body>
     <header>
-        <ul class="ersteListe">
-            <li>
-                <a href="#" >Zutrittsversuche</a>
-              </li>
-              <li>
-                <a href="#" >Mitarbeiter</a>
-              </li>
-              <li>
-                <a href="#" >Mietwagen</a>
-              </li>
-       
-        </ul>
-        <img class="Logo" src="img/Logo Nettmann.png" alt="AH-Nettmann Logo"></img>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <ul class="ersteListe">
+                    <li>
+                        <a href="#" >Zutrittsversuche</a>
+                      </li>
+                      <li>
+                        <a href="#" >Mitarbeiter</a>
+                      </li>
+                      <li>
+                        <a href="#" >Mietwagen</a>
+                      </li>   
+                </ul>
+                <img class="Logo" src="img/Logo Nettmann.png" alt="AH-Nettmann Logo"></img>
+            </nav>
     </header>
     <main>
         <article>
            <!--Tabellen Sektion--> 
             <section id="Start">
                 <div>  
-                    <h1>Zutrittsversuche:</h1><br>
+                    <p>Zutrittsversuche:</p><br>
                     <div class="tabelle" frame="border">
                         <table class="tableView" frame="border"> 
                             <tr frame="border">
@@ -59,33 +61,34 @@
                                 <td>101</td>
                                 <td>2022 02 13 17:52:12</td>
                                 <td>1</td>
-                                <td>Schmidt</td>
-                                <td>Eingang Lager</td>
+                                <td>Nettmann</td>
+                                <td>Eingang Büro</td>
                                 <td class="ok">gestattet</td>
                               </tr>
                           </table>
                     </div>
-                    <p frame="below">Es ist zu beachten, dass das RFID System sich noch in der Testphase befindet!</p><br>
+                    <p class="bg-warning">Es ist zu beachten, dass das RFID System sich noch in der Testphase befindet!</p><br>
                     <hr><!--Strich unten-->
                 </div>
-        </main>
-    </section>
+            </section>
             <!--Kontakt-->
-            <section>
-                <h3><strong>Kontakt:</strong></h3>
-                <ul>
-                    <li>Ottostraße 22, 90762 Fürth</li>
-                    <li>0911 11</li>
-                    <li>info@autohaus-nettmann.de</li>
-                </ul><br>
-                <h3><strong>Bankdaten:</strong></h3>
-                <ul>
-                    <li>IBAN: DE666 </li>
-                    <li>BIC</li>
-                    <li>Institut: Super Bank</li>
-                </ul><br>
+            <section class="column"> 
+                    <ul>
+                        <li style="list-style: none; margin-bottom: 20px;"><strong>Kontakt:</strong></li>
+                        <li>Ottostraße 22, 90762 Fürth</li>
+                        <li>0911 11</li>
+                        <li>info@autohaus-nettmann.de</li>
+                    </ul>
+        <ul>
+            <li style="list-style: none; margin-bottom: 20px;"><strong>Bankdaten:</strong></li>
+            <li>IBAN: DE666 </li>
+            <li>BIC 123</li>
+            <li>Institut: SuperBank</li>
+            </ul>
             </section>
         </article>
+    </main>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="#"></script>
+
 </html>

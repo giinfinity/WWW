@@ -1,4 +1,3 @@
-
 /*Horizontale Linie blau hinterlegen*/
 hr {
 	border: 1px solid #0071BD;
@@ -8,13 +7,15 @@ hr {
 nav {
 	background-color: lightgrey;       /* Hintergrundfarbe für die Navigation */ 
 	border-top: solid #0071BD;    		/* Rahmenlinie oben */
-	border-bottom: solid #0071BD; 		/* Rahmenlinie unten */
+	border-bottom: solid #0071BD;	
+	height: 100px;	/* Rahmenlinie unten */
 	margin: 0;                        	/* Keinen Außenabstand */ 
 }
 
 nav li{
 	 display: inline;            /* Listenelemente nebeneinander */
- 	 list-style-type: none;      /* Aufzählungszeichen entfernen */
+ 	 list-style-type: none;  
+	    						 /* Aufzählungszeichen entfernen */
 }
 
 nav a{
@@ -22,6 +23,7 @@ nav a{
   	text-decoration: none;         /* Unterstreichung entfernen */ 
   	padding: 4px 8px;              /* oben/unten 4px, re/li 8px */
 }
+
 
 /* Tabelle formatieren */
 /*---------------------*/
@@ -47,17 +49,16 @@ th {
 }*/
 
 .Logo {
-    text-align: right
+    float: right;
+	height: 50px;
+	width: 170px;
 }
    
-
-
 /* Erste und 3te Zelle/Spalte rechtsbündig - Klasse in table-tag integrieren*/
 #tblZutrittsversuche  td:nth-child(1), 
 #tblZutrittsversuche  td:nth-child(3) {
 	text-align:right;	
 }
-
 
 /* Layout formatieren */
 /*---------------------*/
@@ -67,9 +68,10 @@ th {
 }
 
 .column {
-	flex: 50%;
 	padding-left:20px;
-	display:inline-block; 
+	display: grid; 
+	grid-template-rows: 200px 1fr 100px; 
+	grid-template-columns: 25% 25% 25% 25%; 
 }
 
 .column h3{
